@@ -6,11 +6,12 @@ More info: https://catskull.net/ym2017
 
 ### Building
 
-Only GNU/Linux systems are supported for building. 
-Feel free to contribute a Window build/Makefile, but I will not do it.
+Currently only GNU/Linux systems are supported for building. 
+Feel free to contribute a Windows build/Makefile, but I don't have the means right now.
 
 1. Set up [marsdev](https://github.com/andwn/marsdev)
 2. Just clone & make!
+    
     git clone https://github.com/andwn/ym2017
     cd ym2017
     make
@@ -98,22 +99,22 @@ You don't. I drew text into arrays of 1's and 0's manually.
 
 The YM2017 team!
 
-    VDP_drawText("Hardware              Jazz",	x,	y); y+=2;
-    VDP_drawText("Software             Grind",	x,	y); y+=2;
-    VDP_drawText("Logo                  Keff",	x,	y); y+=2;
-    VDP_drawText("Backgrounds             Ui",	x,	y); y+=2;
-    VDP_drawText("Producer          Catskull",	x,	y); y+=3;
+    Hardware          Jazz
+    Software          Grind
+    Logo              Keff
+    Backgrounds       Ui
+    Producer          Catskull
 
 The artists!
 
-    .artist 	= "Luke McQueen",
-    .artist 	= "nooly",
-    .artist 	= "Jredd",
-    .artist 	= "Cosmo Buggi",
-    .artist 	= "Savaged Regime",
-    .artist 	= "Tobikomi",
-    .artist 	= "Uctumi",
-    .artist 	= "Dya",
-    .artist 	= "Laz",
+    Luke McQueen
+    nooly
+    Jredd
+    Cosmo Buggi
+    Savaged Regime
+    Tobikomi
+    Uctumi
+    Dya
+    Laz
 
 Parts of Stef's SGDK are used including the XGM sound driver, LZ4W compression, and the font.
