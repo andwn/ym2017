@@ -18,9 +18,9 @@ GENGCC_VER := $(shell $(CC) -dumpversion)
 PLUGIN=$(MARSDEV)/m68k-elf/libexec/gcc/m68k-elf/$(GENGCC_VER)
 
 INCS = -Isrc -Ires -Iinc
-CCFLAGS = -Wall -Wextra -O3 -std=c99 -c -fno-builtin -fomit-frame-pointer -fshort-enums \
-			-fno-web -fno-gcse -fno-unit-at-a-time -flto -fuse-linker-plugin
-ASFLAGS = --register-prefix-optional
+CCFLAGS = -m68000 -Wall -Wextra -O3 -std=c99 -c -fno-builtin -fomit-frame-pointer \
+			-fno-web -fno-gcse -fno-unit-at-a-time -flto -fuse-linker-plugin -fshort-enums
+ASFLAGS = -m68000 --register-prefix-optional
 LIBS = -L$(MARSDEV)/m68k-elf/lib/gcc/m68k-elf/$(GENGCC_VER) -lgcc 
 LINKFLAGS = -T $(MARSDEV)/ldscripts/sgdk.ld -nostdlib
 FLAGSZ80 = -isrc/xgm
