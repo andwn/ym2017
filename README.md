@@ -97,6 +97,7 @@ You don't. I drew text into arrays of 1's and 0's manually.
 ### Credits / Thanks
 
 The YM2017 team!
+
     VDP_drawText("Hardware              Jazz",	x,	y); y+=2;
     VDP_drawText("Software             Grind",	x,	y); y+=2;
     VDP_drawText("Logo                  Keff",	x,	y); y+=2;
@@ -104,6 +105,7 @@ The YM2017 team!
     VDP_drawText("Producer          Catskull",	x,	y); y+=3;
 
 The artists!
+
     .artist 	= "Luke McQueen",
     .artist 	= "nooly",
     .artist 	= "Jredd",
