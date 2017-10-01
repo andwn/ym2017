@@ -357,7 +357,7 @@ void gm_playing() {
 	}
 	
 	uint16_t visindex = 0;
-//	uint16_t framerate = IS_PALSYSTEM ? 50 : 60;
+	uint16_t framerate = IS_PALSYSTEM ? 50 : 60;
 	uint16_t frametime = 735; //= IS_PALSYSTEM ? 882 : 735;
 	uint8_t timer = 0;
 	uint8_t shuffleOrder[SONG_COUNT] = {};
@@ -458,7 +458,7 @@ void gm_playing() {
 		}
 		
 		// Draw timer
-		if(timer % 30 == 0) {
+		if((timer & 15) == 0) {
 			uint16_t seconds = elapsed / 60;
 			uint16_t minutes = seconds / 60;
 			seconds %= 60;
@@ -492,7 +492,7 @@ void gm_playing() {
 						(TILE_EXTRA2INDEX + tile)*32, len*16, 2);
 			}
 		}
-		if(++timer > 60) timer = 0;
+		if(++timer > framerate) timer = 0;
 		// Draw visualization
 		if(ledtimer == 0) {
 			for(uint16_t i = 0; i < 8; i++) {
