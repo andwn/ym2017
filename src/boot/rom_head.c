@@ -21,10 +21,10 @@ const struct {
     char region[16];                /* Country Support (16) */
 } rom_header = {
     "SEGA MEGA DRIVE ",
-    "(C)CSET 2017.AUG",
+    "(C)CSET 2017.SEP",
     "YM 2017                                         ",
     "YM 2017                                         ",
-    "GM CSET0001-01",
+    "GM CSET0001-02",
     0x0000,
     "JD              ",
     0x00000000,

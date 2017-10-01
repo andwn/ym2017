@@ -11,11 +11,6 @@ Feel free to contribute a Windows build/Makefile, but I don't have the means rig
 
 1. Set up [marsdev](https://github.com/andwn/marsdev)
 2. Just clone & make!
-    
-    git clone https://github.com/andwn/ym2017
-    cd ym2017
-    make
-
 
 If you have a YM2017 cart, it is reflashable with Krikzz flasher. So if you want
 to play with the LEDs by making your own ROMs you are free to do so.
@@ -49,7 +44,7 @@ see tabgen.c. This was written to generate a table based on a VGM file. First bu
 then feed it your VGM file.
 
     gcc tabgen.c -o tabgen
-    ./tabgen ../../res/bgm/MyNewTrack.vgm 012356667
+    ./tabgen ../../res/bgm/MyNewTrack.vgm 0123456667
 
 You're probably wondering what the heck those numbers are for. Basically, some tracks don't
 use all the sound channels. Also, the MegaDrive has 10 sound channels, while the LED array
