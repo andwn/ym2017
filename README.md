@@ -12,6 +12,15 @@ Feel free to contribute a Windows build/Makefile, but I don't have the means rig
 1. Set up [marsdev](https://github.com/andwn/marsdev)
 2. Just clone & make!
 
+Alternatively, you can build on other platforms (e.g. OS X) using Docker:
+
+1. Install [Docker](https://www.docker.com/)
+1. Run:
+ 
+        $ ./build-rom.sh
+                
+1. The built ROM is named `ym2017-${GIT_REVISION}.bin`
+
 If you have a YM2017 cart, it is reflashable with Krikzz flasher. So if you want
 to play with the LEDs by making your own ROMs you are free to do so.
 
