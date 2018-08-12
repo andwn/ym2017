@@ -54,7 +54,7 @@ src/boot/sega.o: src/boot/rom_head.bin
 
 %.bin: %.elf
 	$(OBJC) -S -O binary $< temp.bin
-	dd if=temp.bin of=$@ bs=8K conv=sync
+	dd if=temp.bin of=$@ bs=8192 conv=sync
 
 %.elf: $(BOOT_RESOURCES) $(OBJS) 
 	$(CC) -o $@ $(LINKFLAGS) $(BOOT_RESOURCES) $(OBJS) $(LIBS)

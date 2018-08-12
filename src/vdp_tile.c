@@ -9,6 +9,8 @@
 
 #include "vdp_tile.h"
 
+extern void lz4w_unpack(uint8_t *src, uint8_t *dst);
+
 static TileSet *allocateTileSetInternal(void *adr) {
     // cast
     TileSet *result = (TileSet*) adr;
