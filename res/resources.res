@@ -4,12 +4,12 @@ PALETTE PAL_Playing	"playing.png" 1
 PALETTE PAL_Credits "credits.png" 1
 PALETTE PAL_CSLogo	"cslogo.png" 2
 
-TILESET TS_Logo		"logo.png" 2
-TILESET TS_List		"list.png" 2
-TILESET TS_Playing	"playing.png" 2
-TILESET TS_Credits	"credits.png" 2
-TILESET TS_CSLogo	"cslogo.png" 2
-TILESET TS_SysFont	"font_lib.png" 2
+TILESET TS_Logo		"logo.png" 2 0
+TILESET TS_List		"list.png" 2 0
+TILESET TS_Playing	"playing.png" 2 0
+TILESET TS_Credits	"credits.png" 2 0
+TILESET TS_CSLogo	"cslogo.png" 2 0
+TILESET TS_SysFont	"font_lib.png" 2 0
 
 BIN stop_xgm		"stop_xgm.bin"
 XGM BGM_PalmORama	"bgm/PalmORama.vgm" 0
